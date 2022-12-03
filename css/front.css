@@ -106,7 +106,7 @@ header {
 
 #main-container {
   width: 100%;
-  height: 500vh;
+  height: 1000vh;
 }
 
 .container {
@@ -234,8 +234,8 @@ header {
 
 .container-3 {
   width: 100%;
-  height: 70vh;
-  margin: 15rem 0px;
+  height: 65vh;
+  margin: 13rem 0px;
 }
 
 .title {
@@ -254,11 +254,11 @@ header {
   grid-auto-flow: column;
   justify-content: center;
   gap: 2em;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .services-container {
-  width: 350px;
+  width: 300px;
 }
 
 figure {
@@ -268,7 +268,7 @@ figure {
 
 figure img {
   width: 100%;
-  height: 350px;
+  height: 300px;
   border-radius: 1rem;
 }
 
@@ -310,4 +310,95 @@ figure img {
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+/*fifth sub-page */
+
+.container-4 {
+  width: 100%;
+  height: 100vh;
+  padding: 10rem 0px;
+  background-color: #3d5a80;
+}
+
+.sub-container-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container-4 h2 {
+  color: #98c1d9;
+  text-shadow: -4px 3px 1px darkorange;
+  font-size: 4em;
+  width: 100%;
+}
+
+.title-container-4 h3 {
+  color: #98c1d9;
+  text-shadow: -4px 3px 1px darkorange;
+  font-size: 4em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weekdays-cols {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.box {
+  width: 12%;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px;
+  height: 3rem;
+  align-items: center;
+}
+
+.days {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Comfortaa";
+}
+
+.box:hover {
+  color: white;
+  background-color: darkorange;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-reserved {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 auto;
+  border: none;
+}
+
+.btn-reserved button {
+  width: 100%;
+  height: 3rem;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: "Montserrat";
+  border-radius: 3px;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-reserved a {
+  width: 15%;
+}
+
+.btn-reserved button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s ease;
+  border: 1px white;
 }
