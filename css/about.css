@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fjalla+One&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Playfair+Display:wght@500&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fjalla+One&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Sanchez&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html {
+  width: 100%;
+}
+
+/*navigation/header*/
+
+.logo {
+  width: 12vw;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.3);
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  background-color: #98c1d9;
+  width: 100%;
+  top: 0;
+}
+
+#about {
+  color: darkorange;
+}
+
+#about::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  transition: 0.3s ease-in-out 0s;
+}
+
+#about:hover::after {
+  width: 100%;
+}
+
+.navs li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+  margin-top: 15px;
+}
+
+.navs a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.navs a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: darkorange;
+  transition: 0.3s ease-in-out 0s;
+}
+
+.navs a:hover::after {
+  width: 100%;
+}
+
+/* 1st */
+
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #ffffff;
+  height: 605px;
+}
+
+.info {
+  width: 2000px;
+  margin: 0px 3rem;
+}
+
+.info h1 {
+  font-family: "Sanchez" sans-serif;
+  font-size: 3em;
+  color: #98c1d9;
+  text-shadow: 5px 3px 3px black;
+}
+
+.info hr {
+  width: 285px;
+  height: 2px;
+  border: 1px solid;
+}
+
+.info p {
+  margin-top: 1rem;
+  font-size: 18px;
+  margin: 0px 2rem;
+  font-family: system-ui;
+  line-height: 3rem;
+}
+
+span {
+  color: darkorange;
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: -2px 3px 2px black;
+}
+
+/* 2nd */
+
+.container-1 {
+  padding: 3rem;
+}
+
+.container-2 {
+  width: 100%;
+  height: 175vh;
+  background-color: #ececec;
+}
+
+.container-title {
+  font-size: 2em;
+  margin: 4rem 3.6em;
+  background-color: black;
+  width: 500px;
+}
+
+.container-title h2 {
+  box-shadow: -10px 10px 5px #98c1d9;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: "Fjalla One";
+  letter-spacing: 1px;
+  color: wheat;
+}
+
+.back-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.members {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10em 2em;
+}
+
+.cols {
+  width: 280px;
+  height: 300px;
+  margin: 0px 2rem;
+  box-shadow: -8px 10px 3px rgb(0, 0, 0, 0.6);
+}
+
+.cols img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.description {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 1em 0px;
+  font-family: "Rajdhani";
+  font-size: 18px;
+  font-weight: 500px;
+}
+
+.description p {
+  width: 80%;
+  border: 2px solid;
+  text-align: center;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkorange;
+}
+
+/*  */
+
+.container-3 {
+  width: 100%;
+  padding: 0px 10rem;
+  margin: 5rem 0px;
+}
+
+.info-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  align-items: center;
+  padding: 0px 2rem;
+  border-radius: 5px;
+  box-shadow: -3px 3px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.info-2 p {
+  margin-top: 1rem;
+  font-size: 18px;
+  margin: 0px 2rem;
+  font-family: system-ui;
+  line-height: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.container-4 {
+  padding: 7rem 0px;
+  width: 100%;
+}
+
+.sub-container-2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.book-text {
+  width: 60%;
+  height: auto;
+}
+
+.book-text p {
+  height: 140px;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Sanchez ";
+  line-height: 1.3em;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.book-img {
+  width: 300px;
+  height: 400px;
+  box-shadow: 8px -5px 3px rgb(0, 0, 0, 0.6);
+}
+
+.book-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.appt-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.appt-btn button {
+  width: 300px;
+  height: 60px;
+  font-size: 20px;
+  font-family: "Fjalla";
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: darkorange;
+}
+
+.appt-btn button:hover {
+  opacity: 0.8;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  background-color: darkorange;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 13rem;
+  align-items: center;
+}
