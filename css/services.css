@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fjalla+One&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Playfair+Display:wght@500&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fjalla+One&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Sanchez&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html {
+  width: 100%;
+}
+
+/*navigation/header*/
+
+.logo {
+  width: 12vw;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.3);
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  background-color: #98c1d9;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+#services {
+  color: darkorange;
+}
+
+#services::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  transition: 0.3s ease-in-out 0s;
+}
+
+#services:hover::after {
+  width: 100%;
+}
+
+.navs li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+  margin-top: 15px;
+}
+
+.navs a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.navs a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: darkorange;
+  transition: 0.3s ease-in-out 0s;
+}
+
+.navs a:hover::after {
+  width: 100%;
+}
+
+/* 1st */
+.container {
+  width: 100%;
+}
+
+.tagline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hr {
+  margin: 0px 15rem;
+}
+
+.hr hr {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 3px;
+}
+
+.hr-2 {
+  margin: 0px 15rem;
+  margin-top: 10rem;
+}
+
+.hr-2 hr {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 3px;
+}
+
+.tagline-container {
+  width: 50%;
+  margin: 5rem 0px;
+  padding: 1rem;
+}
+
+.tagline h4 {
+  font-size: 2em;
+  font-family: "Sanchez";
+  text-transform: uppercase;
+}
+
+span {
+  font-size: 1.5em;
+  color: darkorange;
+  text-shadow: 5px 3px 3px black;
+  text-transform: none;
+}
+
+.title-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: bold;
+  margin: 4rem 0px 0px 0px;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10rem;
+  padding: 2rem 0px;
+}
+
+.services {
+  width: 700px;
+  margin: 3rem 0px;
+}
+
+.services h2 {
+  margin: 5px 0px;
+  font-family: "Sanchez";
+}
+
+.services p {
+  line-height: 1.8em;
+  font-family: "Sanchez";
+  font-size: 18px;
+}
+
+.services-rows {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.prices {
+  width: 300px;
+}
+
+.ranges {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1em 0px;
+}
+
+.ranges p strong {
+  font-size: 20px;
+  font-family: "Sanchez";
+}
+
+.ranges p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Sanchez";
+}
+
+.cats {
+  margin: 1.4rem 0px;
+}
+
+.cats h3 {
+  font-size: 25px;
+  font-family: "Sanchez";
+}
+
+.cats p strong {
+  font-size: 20px;
+  font-family: "Sanchez";
+}
+
+.adds-on-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: bold;
+  margin: 2rem 0px 0px 0px;
+  text-transform: uppercase;
+}
+
+.adds-on-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adds-on {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 5em;
+  margin-top: 3rem;
+}
+
+.adds-on p {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-family: "Sanchez";
+  margin: 10px;
+  font-size: 20px;
+}
+
+.adds-on strong {
+  font-family: "Sanchez";
+  font-size: 20px;
+}
+
+.walk-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph {
+  width: 1000px;
+  margin-top: 8rem;
+}
+
+.paragraph p {
+  font-family: "Sanchez";
+  font-size: 20px;
+  line-height: 2em;
+  margin: 1em 0px;
+  letter-spacing: 0.5px;
+}
+
+.paragraph p strong {
+  color: darkorange;
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: -2px 3px 2px black;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  height: 50vh;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-family: "Montserrat";
+  font-size: 23px;
+  letter-spacing: 1.3px;
+  background-color: #d9edf7;
+}
+
+td,
+th {
+  height: 4rem;
+  width: 350px;
+  padding: 10px 1.6rem;
+  margin: auto;
+  border-bottom: 0.4px solid;
+}
+
+td {
+  font-family: "Sanchez";
+  font-size: 18px;
+  background-color: #f9f9f9;
+}
+
+tr {
+  box-shadow: 0 4px 10px -2px black;
+}
+/* contact */
+
+.container-contact {
+  width: 100%;
+  height: 180vh;
+  display: grid;
+  place-content: center;
+}
+
+.title-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-contact h1 {
+  letter-spacing: 0.3em;
+  text-shadow: -5px 3px 3px rgba(0, 0, 0, 0.5);
+  font-size: 3em;
+}
+
+.upper-text {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: row;
+  gap: 0.5em 0px;
+  margin: 3rem 0px;
+}
+
+.text1 {
+  font-family: "Sanchez";
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.text2 {
+  font-family: "Sanchez";
+  font-size: 1em;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+
+.text3 {
+  font-family: "Sanchez";
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.form-contact {
+  width: 100%;
+  height: auto;
+  padding: 0px 2rem;
+}
+
+form {
+  width: 100%;
+  margin: 2rem 0px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 5px 0px;
+  width: 100%;
+  border: 0.5px solid;
+  height: 40px;
+  font-family: "Sanchez";
+  display: inline-block;
+  line-height: 20rem;
+  background-color: #fafafa;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+input[type="email"] {
+  padding: 5px;
+  margin: 5px 0px;
+  width: 100%;
+  border: 0.5px solid;
+
+  height: 40px;
+  font-family: "Sanchez";
+  display: inline-block;
+  background-color: #fafafa;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+  padding: 10px;
+  border: 0.5px solid;
+  display: block;
+  width: 100%;
+  resize: none;
+  font-family: "Sanchez";
+  margin: 5px 0px;
+  background-color: #fafafa;
+  border-color: rgba(0, 0, 0, 0.2);
+  height: 350px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin: 5px 0px;
+  width: 100%;
+  border: 0.5px solid;
+  height: 40px;
+  font-family: "Sanchez";
+  display: inline-block;
+  -moz-appearance: textfield;
+  background-color: #fafafa;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.form-btn {
+  width: 18%;
+}
+
+.form-btn button {
+  padding: 20px;
+  margin: 3px 0px;
+  width: 100%;
+  height: 40px;
+  border: 0.5px solid;
+  font-family: "Fjalla";
+  font-size: 16px;
+  cursor: pointer;
+  border-color: darkorange;
+  color: darkorange;
+  text-transform: uppercase;
+  background-color: #ffff;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info {
+  margin-top: 2rem;
+  font-size: 16px;
+}
+
+.user-info label {
+  font-family: "Sanchez";
+}
+
+form button:hover {
+  background-color: darkorange;
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  background-color: darkorange;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 13rem;
+  align-items: center;
+}
