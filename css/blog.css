@@ -80,3 +80,72 @@ header {
 .navs a:hover::after {
   width: 100%;
 }
+
+/* start */
+
+/* Faqs */
+.container-faqs {
+  padding: 2.5rem 2rem;
+}
+
+#link {
+  text-decoration: none;
+  color: black;
+}
+
+.title-faqs {
+  width: 20%;
+  background-color: black;
+  height: 75px;
+  display: grid;
+  place-content: center;
+  box-shadow: -5px 5px 3px #98c1d9;
+  margin-left: 3rem;
+}
+
+.title-faqs h1 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 3em;
+  display: grid;
+  place-content: center;
+  color: white;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.faqs-sub-container {
+  width: 100%;
+}
+
+.faqs-rows {
+  margin: 2rem 5rem;
+  display: grid;
+  place-items: center;
+}
+
+.faqs {
+  margin: 1rem 0px;
+  transition: transform;
+}
+
+.faqs:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.faqs strong {
+  font-size: 1em;
+  font-family: "Montserrat";
+  color: darkorange;
+}
+
+span {
+  font-weight: bold;
+}
+
+.faqs p {
+  line-height: 1.9em;
+  margin-top: 0.5em;
+  font-family: "Sanchez";
+}
