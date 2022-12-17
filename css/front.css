@@ -242,8 +242,11 @@ span{
 /* 4th sub-page */
 .container-3 {
   width: 100%;
-  height: 65vh;
-  margin: 16rem 0px;
+  height: 120vh;
+  display: grid;
+  place-content: center;
+  margin-top: 5rem ;
+  
 }
 
 .title {
@@ -254,6 +257,8 @@ span{
   text-transform: uppercase;
   font-weight: bold;
   color: darkorange;
+
+
 }
 
 .sub-container-2 {
@@ -262,21 +267,29 @@ span{
   justify-content: center;
   gap: 2em;
   margin-top: 4rem;
+  place-items: center;
+  
+
+  
 }
 
 .services-container {
   width: 300px;
+  
 }
 
 figure {
   display: inline-block;
   cursor: pointer;
+
 }
 
 figure img {
   width: 100%;
   height: 300px;
-  border-radius: 1rem;
+  border-radius: 3px;
+ 
+  
 }
 
 .services-btn {
@@ -528,14 +541,14 @@ figure img {
   text-align: center;
   font-size: 3em;
   font-family: "Montserrat";
-  margin-bottom: 1rem;
+ 
 }
 
 .form-title p{
   text-align: center;
   font-size: 22px;
   font-family: "Sanchez";
-  line-height:2em ;
+  line-height:1.5em ;
 }
 
 .form-container{
@@ -618,12 +631,60 @@ form button:hover{
 
 /* Footer */
 
-footer {
+footer{
+    padding: 2rem 4rem;
+  margin-top: 20rem;
+    height: 30vh;
+      background-color: darkorange;
+}
+
+.ftr {
   width: 100%;
-  background-color: darkorange;
   display: flex;
-  justify-content: center;
-  padding: 1rem;
-  margin-top: 13rem;
+  justify-content: space-between;
   align-items: center;
 }
+
+.info p{
+  line-height: 1.7em;
+  font-family: "Sanchez";
+}
+
+.info p:hover{
+  color: #98c1d9;
+  transition: .1s ease;
+}
+
+.info a{
+  text-decoration: none;
+  color: black;
+}
+
+.info a:hover{
+  color: #98c1d9;
+    transition: .1s ease;
+}
+
+.socmed li{
+  display: inline-block;
+  margin: 0px .75rem;
+  cursor: pointer;
+}
+
+.fa-brands:hover{
+  color:#98c1d9;
+  content: '';
+  transition: .3s ease;
+}
+
+
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5em;
+}
+
+
+
+  

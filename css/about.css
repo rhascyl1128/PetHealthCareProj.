@@ -175,7 +175,8 @@ span {
   width: 250px;
   height: 300px;
   margin: 0px 2rem;
-  box-shadow: -8px 10px 3px rgb(0, 0, 0, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .cols img {
@@ -299,15 +300,58 @@ span {
   color: white;
   transition: 0.3s ease;
 }
-
-/* Footer */
+/* 
+footer  */
 
 footer {
-  width: 100%;
+  padding: 2rem 4rem;
+  margin-top: 20rem;
+  height: 30vh;
   background-color: darkorange;
+}
+
+.ftr {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 1rem;
-  margin-top: 13rem;
+  justify-content: space-between;
   align-items: center;
+}
+
+.information p {
+  line-height: 1.7em;
+  font-family: "Sanchez";
+}
+
+.information p:hover {
+  color: #98c1d9;
+  transition: 0.1s ease;
+}
+
+.information a {
+  text-decoration: none;
+  color: black;
+}
+
+.information a:hover {
+  color: #98c1d9;
+  transition: 0.1s ease;
+}
+
+.socmed li {
+  display: inline-block;
+  margin: 0px 0.75rem;
+  cursor: pointer;
+}
+
+.fa-brands:hover {
+  color: #98c1d9;
+  content: "";
+  transition: 0.3s ease;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5em;
 }

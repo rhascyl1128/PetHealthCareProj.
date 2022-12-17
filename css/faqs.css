@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fjalla+One&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Playfair+Display:wght@500&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fjalla+One&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Sanchez&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html {
+  width: 100%;
+}
+
+/*navigation/header*/
+
+.logo {
+  width: 12vw;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.3);
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 100;
+  background-color: #98c1d9;
+  width: 100%;
+  top: 0;
+  position: sticky;
+}
+
+#blog {
+  color: darkorange;
+}
+
+#blog::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  transition: 0.3s ease-in-out 0s;
+}
+
+#blog:hover::after {
+  width: 100%;
+}
+
+.navs li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+  margin-top: 15px;
+}
+
+.navs a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.navs a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: darkorange;
+  transition: 0.3s ease-in-out 0s;
+}
+
+.navs a:hover::after {
+  width: 100%;
+}
+
+/* start */
+
+/* Faqs */
+.container-faqs {
+  padding: 2.5rem 2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: darkorange;
+}
+
+.title-faqs {
+  width: 100%;
+  background-color: black;
+  height: 75px;
+  display: grid;
+  place-content: center;
+  box-shadow: -5px 5px 3px #98c1d9;
+}
+
+.title-faqs h1 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 3em;
+  display: grid;
+  place-content: center;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.faqs-sub-container {
+  width: 100%;
+}
+
+.faqs-rows {
+  margin: 2rem 5rem;
+  display: grid;
+  place-items: center;
+}
+
+.faqs {
+  margin: 1.25rem 0px;
+  transition: transform;
+  box-shadow: -5px 5px 3px #98c1d9;
+  padding: 0.75em;
+  width: 100%;
+}
+
+.faqs:hover {
+  transform: scale(1.1);
+  transition: 0.75s;
+}
+
+.faqs strong {
+  font-size: 1em;
+  font-family: "Montserrat";
+  color: darkorange;
+}
+
+span {
+  font-weight: bold;
+}
+
+.faqs p {
+  line-height: 1.9em;
+  margin-top: 0.5em;
+  font-family: "Sanchez";
+}
+
+/* Footer */
+
+footer {
+  padding: 2rem 4rem;
+  margin-top: 20rem;
+  height: 30vh;
+  background-color: darkorange;
+}
+
+.ftr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info p {
+  line-height: 1.7em;
+  font-family: "Sanchez";
+}
+
+.info p:hover {
+  color: #98c1d9;
+  transition: 0.1s ease;
+}
+
+.info a {
+  text-decoration: none;
+  color: black;
+}
+
+.info a:hover {
+  color: #98c1d9;
+  transition: 0.1s ease;
+}
+
+.socmed li {
+  display: inline-block;
+  margin: 0px 0.75rem;
+  cursor: pointer;
+}
+
+.fa-brands:hover {
+  color: #98c1d9;
+  content: "";
+  transition: 0.3s ease;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5em;
+}

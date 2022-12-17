@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../css/bookus.css" />
+  <link rel="shortcut icon" href="../images/favicon.ico" />
+  <link rel="stylesheet" href="../stylecss/all.css">
+  <title>Pawsitive</title>
+</head>
+
+<body>
+  <header>
+    <a href="../html/front.html"><img class="logo" src="../images/logo.png" alt="" /></a>
+    <nav>
+      <ul class="navs">
+        <li><a href="../html/front.html">HOME</a></li>
+        <li><a href="../html/AboutUs.html">ABOUT US</a></li>
+        <li><a href="../html/Services.html">RATES & SERVICES</a></li>
+        <li><a href="../html/faqs.html">FAQS</a></li>
+        <li><a id="bookus" href="../html/bookus.html"> BOOK US</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- reservation form -->
+  <div class="container">
+    <form>
+      <div class="main-form">
+        <div class="title">Your Information</div>
+        <div class="horizontal-line">
+          <hr>
+        </div>
+        <div class="upper-text">
+          <p>All fields marked with <span>*</span> are required and must be filled.</p>
+        </div>
+        <div class="user-info">
+          <label for="name">NAME <span>*</span></label><br>
+          <div class="user-name-input">
+            <input type="text" id="name" placeholder="Firts Name" required>
+            <input type="text" id="name" placeholder="Last Name" required>
+          </div>
+        </div>
+        <div class="user-info">
+          <label for="address">ADDRESS <span>*</span></label><br>
+          <input type="text" id="address" placeholder="Address" required>
+        </div>
+        <div class="user-input-address">
+          <input type="text" id="address" placeholder="City" required>
+          <input type="number" id="address" placeholder="Postal / Zip Code ">
+        </div>
+        <div class="user-info">
+          <label for="email">EMAIL <span>*</span></label><br>
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="user-info">
+          <label for="phone-number">PHONE NUMBER <span>*</span></label><br>
+          <input type="number" id="phone-number" placeholder="Please enter phone number" required>
+        </div>
+        <div class="horizontal-line">
+          <hr>
+        </div>
+        <div class="title">Loading Request</div>
+        <div class="horizontal-line">
+          <hr>
+        </div>
+        <div class="request">
+          <label for="checking-in">CHECKING IN <span>*</span></label><br>
+          <input type="date" id="checking-in" placeholder="mm-dd-yyyy" required>
+        </div>
+        <div class="request">
+          <label for="checking-out">CHECKING OUT <span>*</span></label><br>
+          <input type="date" id="checking-out" placeholder="mm-dd-yyyy" required>
+        </div>
+        <div class="horizontal-line">
+          <hr>
+        </div>
+        <div class="title">Pet Information</div>
+        <div class="horizontal-line">
+          <hr>
+        </div>
+
+        <!-- gender -->
+
+        <div class="pet-info">
+          <label for="species">SPECIES <span>*</span></label><br>
+          <input type="radio" id="species" name="species" value="Dog" required>
+          <label for="dog">Dog</label><br>
+          <input type="radio" id="species" name="species" value="Cat" required>
+          <label for="cat">Cat</label><br>
+        </div>
+
+        <!-- pet info -->
+        <div class="pet-info">
+          <label for="pet-name">PET'S NAME <span>*</span></label><br>
+          <input type="text" id="pet-name" required>
+        </div>
+        <div class="pet-info">
+          <label for="pet-breed">BREED <span>*</span></label><br>
+          <input type="text" id="pet-name" required>
+        </div>
+        <div class="pet-info">
+          <label for="pet-color">COLOR <span>*</span></label><br>
+          <input type="text" id="pet-name" required>
+        </div>
+        <div class="pet-info">
+          <label for="pet-age">APPROXIMATELY BIRTH/AGE <span>*</span></label><br>
+          <input type="text" id="pet-name" required>
+        </div>
+
+
+        <!-- type -->
+        <div class="pet-info">
+          <label for="gender">GENDER <span>*</span></label><br>
+          <input type="radio" id="gender" name="gender" value="Male" required>
+          <label for="gender">Male</label><br>
+          <input type="radio" id="gender" name="gender" value="Female" required>
+          <label for="gender">Female</label><br>
+        </div>
+
+        <!-- textarea -->
+        <div class="message">
+          <label for="message">ADDITIONAL COMMENTS</label><br>
+          <textarea></textarea><br>
+
+          <!-- button -->
+          <div class="form-btn">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="ftr">
+      <div class="info">
+        <p>Pawsitive@gmail.com</p>
+        <p>(+63)-9-1234-567891</p>
+        <a href="../html/AboutUs.html">
+          <p>Web Design By: Group 2</p>
+        </a>
+      </div>
+      <div class="socmed">
+        <ul>
+          <li><i class="fa-brands fa-square-facebook fa-2x"></i></li>
+          <li><i class="fa-brands fa-instagram fa-2x"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2022 Pawsitive. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

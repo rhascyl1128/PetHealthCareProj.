@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fjalla+One&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Playfair+Display:wght@500&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fjalla+One&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fjalla+One&family=Gloria+Hallelujah&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Playfair+Display:ital@1&family=Rajdhani:wght@500&family=Sanchez&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -102,7 +104,6 @@ header {
 }
 
 .hr-2 {
-  margin: 0px 15rem;
   margin-top: 10rem;
 }
 
@@ -138,19 +139,19 @@ span {
   font-size: 28px;
   font-weight: bold;
   margin: 4rem 0px 0px 0px;
+  color: darkorange;
 }
 
 .sub-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 0px 10rem;
+  margin: 2rem 10rem;
   padding: 2rem 0px;
 }
 
 .services {
   width: 700px;
-  margin: 3rem 0px;
+  margin: 0.5rem 0px;
 }
 
 .services h2 {
@@ -162,6 +163,7 @@ span {
   line-height: 1.8em;
   font-family: "Sanchez";
   font-size: 18px;
+  margin: 20px 0px;
 }
 
 .services-rows {
@@ -170,13 +172,14 @@ span {
 }
 
 .prices {
-  width: 300px;
+  width: 100%;
 }
 
 .ranges {
   display: grid;
   grid-auto-flow: row;
   gap: 1em 0px;
+  justify-content: center;
 }
 
 .ranges p strong {
@@ -213,6 +216,7 @@ span {
   font-weight: bold;
   margin: 2rem 0px 0px 0px;
   text-transform: uppercase;
+  color: darkorange;
 }
 
 .adds-on-container {
@@ -271,7 +275,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   height: 50vh;
 }
 
@@ -309,9 +313,11 @@ tr {
 
 .container-contact {
   width: 100%;
-  height: 180vh;
+  height: 195vh;
   display: grid;
   place-content: center;
+  background-color: #ececec;
+  margin: 10rem 0px;
 }
 
 .title-contact {
@@ -324,6 +330,7 @@ tr {
   letter-spacing: 0.3em;
   text-shadow: -5px 3px 3px rgba(0, 0, 0, 0.5);
   font-size: 3em;
+  margin-top: 5rem;
 }
 
 .upper-text {
@@ -332,7 +339,7 @@ tr {
   align-items: center;
   grid-template-rows: row;
   gap: 0.5em 0px;
-  margin: 3rem 0px;
+  margin: 4rem 0px;
 }
 
 .text1 {
@@ -362,6 +369,32 @@ tr {
   padding: 0px 2rem;
 }
 
+.container-2 {
+  height: 130vh;
+  background-image: url("../images/bgimage.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.text-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-img h4 {
+  text-shadow: 5px 2px black;
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  font-weight: lighter;
+  font-family: "Gloria Hallelujah";
+}
+
+/* FORM */
 form {
   width: 100%;
   margin: 2rem 0px;
@@ -385,7 +418,6 @@ input[type="email"] {
   margin: 5px 0px;
   width: 100%;
   border: 0.5px solid;
-
   height: 40px;
   font-family: "Sanchez";
   display: inline-block;
@@ -465,11 +497,54 @@ form button:hover {
 /* Footer */
 
 footer {
-  width: 100%;
+  padding: 2rem 4rem;
+  margin-top: 20rem;
+  height: 30vh;
   background-color: darkorange;
+}
+
+.ftr {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 1rem;
-  margin-top: 13rem;
+  justify-content: space-between;
   align-items: center;
+}
+
+.info p {
+  line-height: 1.7em;
+  font-family: "Sanchez";
+}
+
+.info p:hover {
+  color: #98c1d9;
+  transition: 0.1s ease;
+}
+
+.info a {
+  text-decoration: none;
+  color: black;
+}
+
+.info a:hover {
+  color: #98c1d9;
+  transition: 0.1s ease;
+}
+
+.socmed li {
+  display: inline-block;
+  margin: 0px 0.75rem;
+  cursor: pointer;
+}
+
+.fa-brands:hover {
+  color: #98c1d9;
+  content: "";
+  transition: 0.3s ease;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5em;
 }
