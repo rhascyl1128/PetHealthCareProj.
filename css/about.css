@@ -293,6 +293,7 @@ span {
   background-color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
+  transition: 0.3s ease;
 }
 
 .appt-btn button:hover {
@@ -341,6 +342,10 @@ footer {
   display: inline-block;
   margin: 0px 0.75rem;
   cursor: pointer;
+}
+
+.fa-brands {
+  transition: 0.3s ease;
 }
 
 .fa-brands:hover {

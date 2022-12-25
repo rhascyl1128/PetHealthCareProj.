@@ -7,6 +7,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto Condensed", sans-serif;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -14,80 +15,47 @@ html {
 }
 
 /* navigation/header*/
-
-.first{
+header {
   width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.bg-image {
-  background-image: url("../images/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+nav {
+  position: absolute;
   width: 100%;
-  height: 115vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
 }
 
-.banner {
-  text-align: center;
-  padding-top: 2rem;
-
-}
-
-.banner h1 {
-  font-size: 4rem;
-  border: 2px ;
-
-  font-family: "Sanchez";
-}
-
-.banner p {
-  font-size: 35px;
-  letter-spacing: 0.5px;
-  font-family: "Sanchez;
-}
-
-.logo {
-  width: 12vw;
+nav .logo {
+  width: 200px;
   transition: 0.3s ease-in-out;
 }
 
 .logo:hover {
   transform: scale(1.3);
+  transition: 0.3s ease-in-out;
 }
 
-header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #98c1d9;
-  width: 100%;
-  position: sticky;
-  z-index: 100;
-  top: 0;
-}
-
-#home {
-  color: darkorange;
-}
-
-#home::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 3px;
-  background-color: black;
-  transition: 0.3s ease-in-out 0s;
-}
-
-#home:hover::after {
-  width: 100%;
-}
-
-.navs li {
+nav ul li {
   list-style: none;
   display: inline-block;
-  padding: 0px 20px;
-  margin-top: 15px;
+  margin: 13px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
 
 .navs a {
@@ -95,7 +63,7 @@ header {
   color: black;
   font-size: 16px;
   letter-spacing: 1px;
- font-weight: 700;
+  font-weight: 700;
 }
 
 .navs a::after {
@@ -110,8 +78,62 @@ header {
 .navs a:hover::after {
   width: 100%;
 }
+#home {
+  color: darkorange;
+}
 
-/* 2nd sub-page */
+#home::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  transition: 0.3s ease-in-out;
+}
+
+#home:hover::after {
+  width: 100%;
+}
+
+.welcome-text {
+  text-align: center;
+  outline: 3px solid;
+  background-color: rgb(0, 0, 0, 0.2);
+  padding: 1em;
+  -webkit-animation: colorchange 10s infinite alternate;
+}
+@-webkit-keyframes colorchange {
+  10% {
+    color: black;
+  }
+  60% {
+    color: #98c1d9;
+  }
+  30% {
+    color: darkorange;
+  }
+}
+
+.welcome-text h1 {
+  font-size: 3em;
+  font-weight: 600;
+  font-family: "Sanchez";
+}
+.welcome-text p {
+  font-size: 2em;
+  font-family: "Sanchez";
+}
+
+.background-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-size: contain;
+  width: 100%;
+}
+
+/* 1st */
 
 .container {
   width: 100%;
@@ -119,7 +141,7 @@ header {
   padding-top: 1rem;
 }
 
-span{
+span {
   font-weight: bold;
   color: darkorange;
 }
@@ -195,6 +217,7 @@ span{
   cursor: pointer;
   border-radius: 3px;
   font-weight: bold;
+  transition: 0.3s ease;
 }
 
 .btn button:hover {
@@ -203,7 +226,7 @@ span{
   border: 2px darkorange solid;
 }
 
-/* 3rd sub-page */
+/* 2nd */
 .container-2 {
   width: 100%;
   height: 120vh;
@@ -239,14 +262,13 @@ span{
   border-radius: 20px;
 }
 
-/* 4th sub-page */
+/* 3rd */
 .container-3 {
   width: 100%;
   height: 120vh;
   display: grid;
   place-content: center;
-  margin-top: 5rem ;
-  
+  margin-top: 5rem;
 }
 
 .title {
@@ -257,8 +279,6 @@ span{
   text-transform: uppercase;
   font-weight: bold;
   color: darkorange;
-
-
 }
 
 .sub-container-2 {
@@ -268,28 +288,21 @@ span{
   gap: 2em;
   margin-top: 4rem;
   place-items: center;
-  
-
-  
 }
 
 .services-container {
   width: 300px;
-  
 }
 
 figure {
   display: inline-block;
   cursor: pointer;
-
 }
 
 figure img {
   width: 100%;
   height: 300px;
   border-radius: 3px;
- 
-  
 }
 
 .services-btn {
@@ -330,9 +343,10 @@ figure img {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
-/*5th sub-page */
+/* 4th */
 
 .container-4 {
   width: 100%;
@@ -379,6 +393,7 @@ figure img {
   margin: 10px 10px;
   height: 3rem;
   align-items: center;
+  transition: 0.3s ease-in-out;
 }
 
 .days {
@@ -410,6 +425,7 @@ figure img {
   border-radius: 3px;
   font-weight: bold;
   border: none;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-reserved a {
@@ -419,11 +435,11 @@ figure img {
 .btn-reserved button:hover {
   background-color: black;
   color: white;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
   border: 1px white;
 }
 
-/* 6th sub-page */
+/* 5th */
 .container-5 {
   width: 100%;
   height: 110vh;
@@ -463,6 +479,7 @@ figure img {
   background-color: #98c1d9;
   border-radius: 10px;
   border: none;
+  transition: 0.3s ease;
 }
 
 .rows:hover {
@@ -492,7 +509,6 @@ figure img {
   display: grid;
   place-content: center;
   text-decoration: none;
-
 }
 
 .btn-cols {
@@ -521,9 +537,8 @@ figure img {
   box-shadow: 0 4px 10px -2px black;
 }
 
-
-/* 8th sub-page */
-.container-6{
+/* 7th */
+.container-6 {
   width: 100%;
   padding: 2rem 0px;
   background-color: #3d5a80;
@@ -531,33 +546,31 @@ figure img {
   grid-auto-flow: column;
   align-items: center;
 }
-.form-title{
+.form-title {
   display: grid;
   justify-content: center;
   align-items: center;
 }
 
-.form-title h5{
+.form-title h5 {
   text-align: center;
   font-size: 3em;
   font-family: "Montserrat";
- 
 }
 
-.form-title p{
+.form-title p {
   text-align: center;
   font-size: 22px;
   font-family: "Sanchez";
-  line-height:1.5em ;
+  line-height: 1.5em;
 }
 
-.form-container{
+.form-container {
   width: 100%;
   height: 600px;
-  
 }
 
-form{
+form {
   margin: 3rem 5rem;
   border: 2px solid;
   height: 500px;
@@ -567,27 +580,12 @@ form{
   box-shadow: -8px 5px 8px 5px;
 }
 
-label{
-  color:black;
-  
+label {
+  color: black;
 }
 
-
-
-input[type=text]{
-  padding:10px;
-  margin: 5px 0px;
-  width: 100%;
-  border: 2px solid;
-  height: 55px;
-  font-family: "Montserrat";
-  display: inline-block;
-  border-radius: 5px;
-
-}
-
-input[type=email]{
-  padding:10px;
+input[type="text"] {
+  padding: 10px;
   margin: 5px 0px;
   width: 100%;
   border: 2px solid;
@@ -597,7 +595,18 @@ input[type=email]{
   border-radius: 5px;
 }
 
-textarea{
+input[type="email"] {
+  padding: 10px;
+  margin: 5px 0px;
+  width: 100%;
+  border: 2px solid;
+  height: 55px;
+  font-family: "Montserrat";
+  display: inline-block;
+  border-radius: 5px;
+}
+
+textarea {
   padding: 10px;
   border: 2px solid;
   display: inline-block;
@@ -609,8 +618,8 @@ textarea{
   resize: none;
 }
 
-form button{
-  padding:10px;
+form button {
+  padding: 10px;
   margin: 3px 0px;
   width: 100%;
   height: 70px;
@@ -621,21 +630,46 @@ form button{
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition: 0.3s ease;
 }
 
-form button:hover{
+form button:hover {
   background-color: darkorange;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
+/* back to top */
+
+.container-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.back-to-top button {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: white;
+  font-family: "Sanchez";
+  transition: 0.3s ease-in-out;
+}
+
+.back-to-top button:hover {
+  transition: 0.3s ease-in-out;
+  color: white;
+  background-color: black;
+}
 
 /* Footer */
 
-footer{
-    padding: 2rem 4rem;
+footer {
+  padding: 2rem 4rem;
   margin-top: 20rem;
-    height: 30vh;
-      background-color: darkorange;
+  height: 30vh;
+  background-color: darkorange;
 }
 
 .ftr {
@@ -645,46 +679,45 @@ footer{
   align-items: center;
 }
 
-.info p{
+.info p {
   line-height: 1.7em;
   font-family: "Sanchez";
 }
 
-.info p:hover{
+.info p:hover {
   color: #98c1d9;
-  transition: .1s ease;
+  transition: 0.1s ease;
 }
 
-.info a{
+.info a {
   text-decoration: none;
   color: black;
 }
 
-.info a:hover{
+.info a:hover {
   color: #98c1d9;
-    transition: .1s ease;
+  transition: 0.1s ease;
 }
 
-.socmed li{
+.socmed li {
   display: inline-block;
-  margin: 0px .75rem;
+  margin: 0px 0.75rem;
   cursor: pointer;
 }
 
-.fa-brands:hover{
-  color:#98c1d9;
-  content: '';
-  transition: .3s ease;
+.fa-brands {
+  transition: 0.3s ease;
 }
 
+.fa-brands:hover {
+  color: #98c1d9;
+  content: "";
+  transition: 0.3s ease;
+}
 
-.copyright{
+.copyright {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 3.5em;
 }
-
-
-
-  

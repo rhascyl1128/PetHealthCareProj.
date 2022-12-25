@@ -125,14 +125,15 @@ header {
 .faqs {
   margin: 1.25rem 0px;
   transition: transform;
-  box-shadow: -5px 5px 3px #98c1d9;
   padding: 0.75em;
   width: 100%;
+  transition: 0.5s ease-in-out;
 }
 
 .faqs:hover {
   transform: scale(1.1);
-  transition: 0.75s;
+  transition: 0.5s ease-in-out;
+  box-shadow: -5px 5px 3px #98c1d9;
 }
 
 .faqs strong {
@@ -191,6 +192,10 @@ footer {
   display: inline-block;
   margin: 0px 0.75rem;
   cursor: pointer;
+}
+
+.fa-brands {
+  transition: 0.3s ease;
 }
 
 .fa-brands:hover {

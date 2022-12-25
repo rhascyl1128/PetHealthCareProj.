@@ -2,53 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fjalla+One&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Playfair+Display:wght@500&family=Rajdhani:wght@500&family=Roboto+Condensed&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fjalla+One&family=Gloria+Hallelujah&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Playfair+Display:ital@1&family=Rajdhani:wght@500&family=Sanchez&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fjalla+One&family=Gloria+Hallelujah&family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&family=Playfair+Display:ital@1&family=Rajdhani:wght@500&family=Sanchez&display=swap");
 * {
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 html {
   width: 100%;
 }
 
-body{
+body {
   background-color: #ececec;
 }
 /* navigation/header*/
-
-.first{
-  width: 100%;
-}
-
-.bg-image {
-  background-image: url("../images/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 115vh;
-}
-
-.banner {
-  text-align: center;
-  padding-top: 2rem;
-
-}
-
-.banner h1 {
-  font-size: 4rem;
-  border: 2px ;
-
-  font-family: "Sanchez";
-}
-
-.banner p {
-  font-size: 35px;
-  letter-spacing: 0.5px;
-  font-family: "Sanchez;
-}
 
 .logo {
   width: 12vw;
@@ -99,7 +68,8 @@ header {
   color: black;
   font-size: 16px;
   letter-spacing: 1px;
- font-weight: 700;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .navs a::after {
@@ -115,96 +85,148 @@ header {
   width: 100%;
 }
 
-/* reservation form */
+/* firts container */
 
-.container{
-  padding: 3rem 2rem;
-  background-color: #ececec;
-  
+.first-container {
+  width: 100%;
+  height: 100vh;
 }
 
-form{
+.back-image {
+  background-image: linear-gradient(
+      rgba(98, 142, 224, 0.342),
+      rgba(230, 151, 55, 0.644)
+    ),
+    url("../images/dogsleeping.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.back-image-text {
+  justify-content: center;
+  align-content: center;
+
+}
+
+.back-image-text h1 {
+  font-size: 6em;
+  font-family: "Sanchez;
+}
+
+.back-image-text p {
+  text-align: center;
+  font-size:1.5em;
+  font-family: "Montserrat";
+  letter-spacing: 0.2em;
+
+}
+
+.fa-sharp{
+  margin: 5px 0px;
+  color: black;
+    transition: .3s ease;
+}
+
+.fa-sharp:hover{
+  color: darkorange;
+  transition: .3s ease;
+}
+
+/* reservation form */
+
+#container {
+  padding: 3rem 2rem;
+  margin: 4rem 0px;
+}
+
+form {
   border: none;
   border-radius: 5px;
   background-color: white;
 }
 
-
-
-.main-form{
+.main-form {
   padding: 1rem 1.5rem;
 }
 
-.horizontal-line{
+.horizontal-line {
   margin: 1rem 0px;
 }
 
-.horizontal-line hr{
-    background-color: rgba(0, 0, 0, 0.8);
+.horizontal-line hr {
+  background-color: rgba(0, 0, 0, 0.8);
   height: 3px;
 }
 
-.title{
- font-size: 1.8em;
- font-family: 'Lucida Grande', sans-serif;
- font-weight: bold;
- margin: 1rem 0px;
- color: darkorange;
+.title {
+  font-size: 2em;
+  font-family: "Lucida Grande", sans-serif;
+  font-weight: bold;
+  margin: 1rem 0px;
+  color: darkorange;
 }
 
-.message,  .user-info label{
+.message,
+.user-info label {
   font-family: "Sanchez";
   font-size: 14px;
 }
 
- .pet-info label{
+.pet-info label {
   font-family: "Sanchez";
-    font-size: 14px;
+  font-size: 14px;
 }
 
-.message label{
-  font-family: 'Sanchez';
-    font-size: 14px;
-}
-
-.request label{
+.message label {
   font-family: "Sanchez";
-    font-size: 14px;
+  font-size: 14px;
 }
 
+.request label {
+  font-family: "Sanchez";
+  font-size: 14px;
+}
 
-
-.upper-text{
+.upper-text {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem 0px;
-} 
-
-.upper-text p{
-    font-family: "Sanchez";
 }
 
-span{
+.upper-text p {
+  font-family: "Sanchez";
+}
+
+span {
   color: rgb(179, 41, 41);
 }
 
-.user-info, .user-name, .request {
+.user-info,
+.user-name,
+.request {
   margin: 1rem 0px;
-
 }
 
-.pet-info{
+.pet-info {
   margin: 1.5rem 0px;
 }
 
-.user-name-input{
+.user-name-input {
   display: flex;
   justify-content: space-between;
-    gap: 0px 1rem;
+  gap: 0px 1rem;
 }
 
-.user-input-address{
+.user-input-address {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -212,30 +234,31 @@ span{
 }
 
 input[type="radio"] {
-  margin: .5rem 0px;
-  
+  margin: 0.5rem 0px;
 }
 
-input[type="email"], input[type="number"], input[type="text"] {
+input[type="email"],
+input[type="number"],
+input[type="text"] {
   margin: 3px 0px;
   padding: 15px;
-  width: 100%; 
+  width: 100%;
   margin: 3px 0px;
   padding: 15px;
   width: 100%;
   font-family: "Sanchez";
-  
-  border: 0.5px solid #555555 ;
+
+  border: 0.5px solid #555555;
 }
 
-input[type="date"]{
-   margin: 3px 0px;
-  padding: 15px;
-  width: 100%; 
+input[type="date"] {
   margin: 3px 0px;
   padding: 15px;
   width: 100%;
-    border: 0.5px solid #555555 ;
+  margin: 3px 0px;
+  padding: 15px;
+  width: 100%;
+  border: 0.5px solid #555555;
   -moz-appearance: textfield;
 }
 
@@ -244,29 +267,26 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-
-
-
-.message{
+.message {
   margin: 2rem 0px;
 }
 
-textarea{
+textarea {
   margin: 1rem 0px;
   width: 100%;
-  height:350px;
+  height: 350px;
   display: block;
   resize: none;
   padding: 1rem;
-    border: 0.5px solid #555555 ;
+  border: 0.5px solid #555555;
 }
 
-.form-btn{
+.form-btn {
   width: 180px;
   height: 50px;
 }
 
-button{
+button {
   padding: 20px;
   width: 100%;
   height: 100%;
@@ -282,14 +302,16 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease;
 }
-
 
 .form-btn button:hover {
   background-color: darkorange;
   color: white;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
+
+
 
 /* Footer */
 
@@ -345,5 +367,3 @@ footer {
   justify-content: center;
   margin-top: 3.5em;
 }
-
-

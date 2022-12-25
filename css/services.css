@@ -477,6 +477,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease;
 }
 
 .user-info {
@@ -534,6 +535,10 @@ footer {
   display: inline-block;
   margin: 0px 0.75rem;
   cursor: pointer;
+}
+
+.fa-brands {
+  transition: 0.3s ease;
 }
 
 .fa-brands:hover {
